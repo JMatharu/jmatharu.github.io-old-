@@ -168,36 +168,41 @@
     <section id="about" class="about section">
         <div class="container">
             <h2 class="title text-center">What is Git Management?</h2>
-            <p class="intro text-center">To understand what git management is, lets move a step back and understand what Git and Version Control System is. There are tons of tutorials of Git on Internet which tells in detail what/where/how Git is used (One of them I like and Recommend is <a href="https://www.udacity.com/course/ud775">How to Use Git and GitHub</a> by Udacity.
+            <p class="intro text-center">To understand what Git Management is, lets move a step back and understand what Git and Version Control System is. There are tons of tutorials of Git on Internet which tells in detail what/where/how Git is used (One of them I like and Recommend is <a href="https://www.udacity.com/course/ud775">How to Use Git and GitHub</a> by Udacity.
                 <br>
                 <br>Git is a free and open source distributed version control system designed to handle, track and manage code by single user or group of users.
                 <br>
                 <br>In simple words Version Control System is a <big>GIANT UNDO</big> button of your project. It just makes easy to save diffrent versions of your file at diffrent point of time, you can restore previous version and compare diffrent version. Colaboration can be done very Easily and Smoothly, lets say no more sending of sending huge ZIP files back and forth.
                 <br>
-                <br>Now in this tutorial I will only focusing on Git Management rather than on Learning GIT
+                <br>Now in this tutorial I will only focusing on Git Management rather than on Learning GIT.
                 <br>
                 <br>And Also I will consider that you have basic knowledge and experience with Git and GitHub, if in case you don't have follow some or the Git Tutorials that I have given link of above.</p>
-                <h2 class="intro text-center">Prerequisite</h2>
+            <h2 class="intro text-center">Prerequisite and StartUp Setup</h2>
 
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-heart"></i>
+                        <i class="fa fa-github"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Designed for developers</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Basic GIT flow</h3>
+                        <p><pre><code class="language-markup">git init</code><br><code class="language-markup">git add .</code><br><code class="language-markup">git commit -m "(commit message)"</code><br><code class="language-markup">git status</code><br><code class="language-markup">git push</code><br><code class="language-markup">git branch</code><br><code class="language-markup">git pull</code></pre>
+                        </p>
                     </div>
                     <!--//content-->
                 </div>
                 <!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa fa-tree"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Time saver</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Source Tree</h3>
+                        <p>We will use Atlassian SourceTree as our GUI client to manage our code and tracking what is the state of our project (Local an GitHub)
+                            <br>DownLoad Here - <a href="http://www.sourcetreeapp.com/download/">SourceTree</a>
+                            <br><br>I have used other GUI (like GItHub for <a href="https://windows.github.com/">Windows</a> and <a href="https://mac.github.com/">MAC</a>) for Git but being honest this is better and pretty simple for beginners. So just trust me and stick to SourceTree <i class="fa fa-smile-o"></i>
+. 
+                        </p>
                     </div>
                     <!--//content-->
                 </div>
@@ -207,13 +212,13 @@
                         <i class="fa fa-crosshairs"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">UX-centred</h3>
+                        <h3 class="sub-title">Configring GitHub Account - SSH keys</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
                     </div>
                     <!--//content-->
                 </div>
                 <!--//item-->
-                <div class="clearfix visible-md"></div>
+                <!--  <div class="clearfix visible-md"></div>
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-tablet"></i>
@@ -221,31 +226,31 @@
                     <div class="content">
                         <h3 class="sub-title">Mobile-friendly</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div>
-                    <!--//content-->
-                </div>
+                    </div> -->
+                <!--//content-->
+                <!-- </div> -->
                 <!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
+                <!--  <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-code"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Easy to customise</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div>
-                    <!--//content-->
-                </div>
+                    </div> -->
+                <!--//content-->
+                <!-- </div> -->
                 <!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
+                <!--   <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-coffee"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">LESS files included</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div>
-                    <!--//content-->
-                </div>
+                    </div> -->
+                <!--//content-->
+                <!-- </div> -->
                 <!--//item-->
             </div>
             <!--//row-->
