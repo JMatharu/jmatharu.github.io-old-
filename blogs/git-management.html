@@ -83,12 +83,29 @@
                         </li>
                         <li class="nav-item"><a class="scrollto" href="#features">Features</a>
                         </li>
-                        <li class="nav-item"><a class="scrollto" href="#docs">Get Started</a>
+                          <li class=" nav-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Started<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#docs" class="scrollto">Get Started</a>
+                                </li>
+                                <li><a href="#goalsandteam" class="scrollto">Goals and Team</a>
+                                </li>
+                                <li><a href="#settingupGithub" class="scrollto">Setting Up GitHub</a>
+                                </li>
+                                <!-- <li class="divider"></li> -->
+                                <li><a href="#settingUpSourceTree" class="scrollto">Setting Up SourceTree</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
                         </li>
                         <li class="nav-item"><a class="scrollto" href="#license">Reasons and Options</a>
                         </li>
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a>
                         </li>
+
                     </ul>
                     <!--//nav-->
                 </div>
@@ -298,7 +315,7 @@
                     <p class="text-center"><i>Before I start, I want to mention that I always recommend all to use terminal, just because that gives more base knowledge to what is happening while you work with GIT.<br><br>But this tutorial is focussing on those users who are new to Git and need to understand GitHub management in simple and easy way.</i>
                     </p>
                     <p class="text-center">At this point I am assumng you have configured your machine with GIT and Source Tree. If still have any issues or confussion get back to my <a class="scrollto" href="#Prerequisite">Prerequisite</a> section above.</p>
-                    <h3 class="sub-title text-center">Goal and Team Members In this Tutorial <i class="fa fa-hand-o-up"></i></h3>
+                    <h3 class="sub-title text-center" id="goalsandteam">Goal and Team Members In this Tutorial <i class="fa fa-hand-o-up"></i></h3>
                     <p><big><b><u>Goal</u></b></big> of this Tutorial is to help Students who started using GitHub for their projects and are not very much familier with how to work with team using GitHub. This ideal situation is in Colleges/Universities team projects.</p>
                     <p><b><big><u>Team Members</u></big></b> : Following are the team members that are most commenly there in a software projects</p>
                     <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;<u>ScrumMaster/Customer</u> - The ScrumMaster is responsible for making sure a Scrum team lives by the values and practices of Scrum. The ScrumMaster does anything possible to help the team perform at their highest level. This involves removing any impediments to progress, facilitating meetings, making sure the product backlog is in good shape and ready for the next sprint/iteraion</p>
@@ -309,7 +326,7 @@
                         <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;And they say <big>"How can I Break it?"</big>
                     </p>
 
-                    <h3 class="sub-title text-center">Setting Up GitHub <i class="fa fa-github"></i></h3>
+                    <h3 class="sub-title text-center" id="settingupGithub">Setting Up GitHub <i class="fa fa-github"></i></h3>
                     <br>
                     <p>Now lets take a step forward and if you are Team's "ScrumMaster/Customer" then go to your <a href="" target="_blank">GitHub</a> account and Log In. </p>
                     <p>
@@ -350,11 +367,12 @@
                     </p>
                     <br>
                     <br>
-                    <h3 class="sub-title text-center">Setting Up SourceTree</h3>
+                    <h3 class="sub-title text-center" id="settingUpSourceTree">Setting Up SourceTree</h3>
                     <br>
                     <p>In this section we will see how to add our Local project and config it to the newly created GitHub repository. </p>
                     <p>At this point you should have configured your Source tree with your User Name and Password and other configuration if needed.</p>
-                    <blockquote><big><b>For this tutorial I will use an <u>Android Project</u> as a sample project, you can use any Project as your project.</b></big></blockquote>
+                    <blockquote><big><b>For this tutorial I will use an <u>Android Project</u> as a sample project, you can use any Project as your project.</b></big>
+                    </blockquote>
                     <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;First Lets Create an Empty Folder in your Machine and then create a new Android Project in that specific Location...................</p>
                     <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;Now Open SourceTree and click on "File" <i class="fa fa-angle-right"></i> "New / Clone", a drop down will open with various different options as seen below.
                         <br>
