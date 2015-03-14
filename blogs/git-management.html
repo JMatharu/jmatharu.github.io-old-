@@ -83,7 +83,7 @@
                         </li>
                         <li class="nav-item"><a class="scrollto" href="#features">Features</a>
                         </li>
-                          <li class=" nav-item dropdown">
+                        <li class=" nav-item dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Started<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#docs" class="scrollto">Get Started</a>
@@ -360,7 +360,7 @@
                         </blockquote>
                         <img src="assets-git-management/images/step5.png" class="img-responsive" alt="">
                     </p>
-                    <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;Clicking on "Create repository" will lead you to new created repository. Note, there are some GIT commands that you see in this picture below that is basically used to sync your project on your local machine to Github.
+                    <p id="settingupGithubStep6">&emsp;&emsp;<span><big>6 .</big></span>&emsp;Clicking on "Create repository" will lead you to new created repository. Note, there are some GIT commands that you see in this picture below that is basically used to sync your project on your local machine to Github.
                         <img src="assets-git-management/images/step6.png" class="img-responsive" alt="">
                     </p>
                     <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;Now lets take a Pause from GitHub and setup our project environment on our Local Machine and we will get back to GitHub after that. <i class="fa fa-smile-o"></i>
@@ -373,22 +373,46 @@
                     <p>At this point you should have configured your Source tree with your User Name and Password and other configuration if needed.</p>
                     <blockquote><big><b>For this tutorial I will use an <u>Android Project</u> as a sample project, you can use any Project as your project.</b></big>
                     </blockquote>
-                    <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;First Lets Create an Empty Folder in your Machine and then create a new Android Project in that specific Location...................</p>
+                    <p>
+                        <BLOCKQUOTE>NOTE : Step 1 to <a href="">asasjhdajhsd</a> is specifically for ScrumMaster/Customer.</BLOCKQUOTE>
+                    </p>
+                    <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;First Lets Create an Empty Folder and then create a new Android Project in that specific Location.
+                        <br>
+                        <blockquote>
+                            <p>At this point you should include ".gitignore" file in your project, as I mentioned above it is a good programming/Git practice to this file. Refer to this to create one for your project - <a href="https://www.gitignore.io/" target="_blank"><i class="fa fa-git"></i></a>
+                            </p>
+                        </blockquote>
+                    </p>
+                    <img src="assets-git-management/images/Sourcestep1.png" class="img-responsive" alt="">
                     <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;Now Open SourceTree and click on "File" <i class="fa fa-angle-right"></i> "New / Clone", a drop down will open with various different options as seen below.
                         <br>
                         <blockquote>
                             <p>As I am using MAC OS for this tutorial, so some of the UI element will not be same as of windows, but not to fear as they all are same for MAC and Windows and are easy understandable irrespective of UI.</p>
                         </blockquote>
-                        <img src="assets-git-management/images/Sourcestep1.png" class="img-responsive" alt="">
+                        <img src="assets-git-management/images/Sourcestep2.png" class="img-responsive" alt="">
                     </p>
                     </p>
-                    <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;</p>
+                    <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;Click on "Add Existing Local repository" and choose the path where you have created your project, then click OK.
+                        <br>Then "Create a local repository" dialog will open as shown below, make sure you select "GIT" in type and uncheck "Also create remort repository" as we already have our remote repository set up earlier in "Setting up GitHub" section.</p>
+                    <img src="assets-git-management/images/Sourcestep3.png" class="img-responsive" alt="">
+                    <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;Now here SourceTree is having your local repository, we will get into this in deep very soon but before that lets config our local repository to the GitHub.</p>
+                    <img src="assets-git-management/images/Sourcestep4.png" class="img-responsive" alt="">
+                    <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;Now just click on "Settings" on top right corner side of SourceTree (can be seen in above image)
+                        <br>And you will see a dialog box like image below.</p>
+                    <img src="assets-git-management/images/Sourcestep5.png" class="img-responsive" alt="">
+                    <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;Now click "Add" button and then go you your Github account where you have created your repository (in this case its "TestGitRepo1" Refer to : <a href="#settingupGithubStep6" class="scrollto">Step 6</a> in - Setting up GitHub)</p>
+                    <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;Now you copy https link from <a href="#settingupGithubStep6" class="scrollto">Step 6</a> in - "Setting up GitHub" into Source tree, and enter name of Repository(preferably same as in GitHub)
+                        <br>
+                        <blockquote>
+                            <p>Note : You dont need to enter Host type, Host Root URL, and UserName (as all this is automatically configured accordingly)</p>
+                        </blockquote>
+                        <img src="assets-git-management/images/Sourcestep6.png" class="img-responsive" alt="">
+                        <br>Now click "Ok". Now you have configured local repository path to remote repository path.
+                        <br>Click Ok and we good to go.
+                        <br> <img src="assets-git-management/images/Sourcestep6-1.png" class="img-responsive" alt="">
+                    </p>
                     <p>&emsp;&emsp;<span><big>8 .</big></span>&emsp;</p>
-                    <p>Now lets get start with creating new project on local machine </p>
+
 
 
                     <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p>
