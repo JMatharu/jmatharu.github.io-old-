@@ -90,7 +90,7 @@
                                 </li>
                                 <li><a href="#goalsandteam" class="scrollto">Goals and Team</a>
                                 </li>
-                                <li><a href="#settingupGithub" class="scrollto">Setting Up GitHub</a>
+                                <li><a href="#settingupGithub" class="scrollto">Setting Up GitHub <i class="fa fa-github"></i></a>
                                 </li>
                                 <!-- <li class="divider"></li> -->
                                 <li><a href="#settingUpSourceTree" class="scrollto">Setting Up SourceTree</a>
@@ -319,7 +319,7 @@
                     <p class="text-center">At this point I am assumng you have configured your machine with GIT and Source Tree. If still have any issues or confussion get back to my <a class="scrollto" href="#Prerequisite">Prerequisite</a> section above.</p>
                     <h3 class="sub-title text-center" id="goalsandteam">Goal and Team Members In this Tutorial <i class="fa fa-hand-o-up"></i></h3>
                     <p><big><b><u>Goal</u></b></big> of this Tutorial is to help Students who started using GitHub for their projects and are not very much familier with how to work with team using GitHub. This ideal situation is in Colleges/Universities team projects.</p>
-                    <p><b><big><u>Team Members</u></big></b> : Following are the team members that are most commenly there in a software projects</p>
+                    <p><b><big><u>Team Members</u></big></b> : Following are the team members that are most commonly there in a software projects</p>
                     <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;<u>ScrumMaster/Customer</u> - The ScrumMaster is responsible for making sure a Scrum team lives by the values and practices of Scrum. The ScrumMaster does anything possible to help the team perform at their highest level. This involves removing any impediments to progress, facilitating meetings, making sure the product backlog is in good shape and ready for the next sprint/iteraion</p>
                     <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;<u>Developers</u> - We all know what they are and what they do <i class="fa fa-smile-o"></i>
                         <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Just to add to your thoughts, they say <big>"How can I make it?"</big>
@@ -494,12 +494,33 @@
                             <li>Each <u>developer should pull code from master branch before they start new task</u>, or even better should pull code from master branch once a day.</li>
                         </ol></b>
                         <br>
-                        <p class="text-center">Now lets get back to what we were doing.</p>
-                        <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;At this point Developer has branches into their GitHub account but dont have similar code in their local machine.</p>
-                        <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;</p>
-                        <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;</p>
-                        <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;</p>
-                        <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;</p>
+                        <p class="text-center">Now lets get back to what we were doing. Following steps are for <big><b><u>Developers</u></b></big><i class="fa fa-smile-o"></i>
+                        </p>
+                        <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;At this point Developer has branches into their GitHub account but dont have similar code in their local machine.
+                            <br>So the first step will be that they sync remote repository to their local machine so that they can start their work.
+                            <br>Now Open SourceTree and click on "File" <i class="fa fa-angle-right"></i> "New / Clone", a drop down will open with various different options as seen below.
+                            <img src="assets-git-management/images/Sourcestep2.png" class="img-responsive" alt="">
+                        </p>
+                        <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;This time click on "Clone from URL", and you will see a dialog box somthing like this.
+                            <img src="assets-git-management/images/DevelopersJob2.png" class="img-responsive" alt="">
+                        </p>
+                        <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;Now Go to GitHub and copy HTTPS URL from right sidebar as seen in Image.
+                            <img src="assets-git-management/images/DevelopersJob3.png" class="img-responsive" alt="">
+                        </p>
+                        <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;Now copy that URl to "Source URL", add "Destination Path" as you like (must be an empty folder) and Name of repository.
+                            <br>You can check out from different branches via going to Advance Options.
+                            <img src="assets-git-management/images/DevelopersJob4.png" class="img-responsive" alt="">
+                            <br>Now click "Clone".
+                        </p>
+                        <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;Lets see how your SourceTree looks like when you pulled all code from Github, and lets understand what is going on.
+                            <img src="assets-git-management/images/DevelopersJob5.png" class="img-responsive" alt="">
+                            <br>See Left sidebar
+                            <ol>
+                                <li>Under Branches we have "master", that basically is the your local Git branch on which you currently are.</li>
+                                <li>Under "origin" you see all the remote branches (One developer to one branch for entire project and no pushing or messing around with others branch <i class="fa fa-smile-o"></i>)</li>
+                                <li>Description box - that all remote branches (master, Developer_branch1, Developer_branch2) are same with your HEAD (your Local Branch)</li>
+                            </ol>
+                        </p>
                         <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;</p>
                         <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;</p>
                     </p>
