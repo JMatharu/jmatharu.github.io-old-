@@ -95,8 +95,8 @@
                                 <!-- <li class="divider"></li> -->
                                 <li><a href="#settingUpSourceTree" class="scrollto">Setting Up SourceTree</a>
                                 </li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a>
+                                <!-- <li class="divider"></li> -->
+                                <li><a href="#teamtrick" class="scrollto">Team Trick</a>
                                 </li>
                             </ul>
                         </li>
@@ -406,13 +406,55 @@
                         <blockquote>
                             <p>Note : You dont need to enter Host type, Host Root URL, and UserName (as all this is automatically configured accordingly)</p>
                         </blockquote>
-                        <img src="assets-git-management/images/Sourcestep6.png" class="img-responsive" alt="">
+                        <img src="assets-git-management/images/Sourcestep7.png" class="img-responsive" alt="">
                         <br>Now click "Ok". Now you have configured local repository path to remote repository path.
                         <br>Click Ok and we good to go.
-                        <br> <img src="assets-git-management/images/Sourcestep6-1.png" class="img-responsive" alt="">
+                        <br> <img src="assets-git-management/images/Sourcestep7-1.png" class="img-responsive" alt="">
                     </p>
-                    <p>&emsp;&emsp;<span><big>8 .</big></span>&emsp;</p>
-
+                    <blockquote class="text-center">
+                        <big>Noticable thing is that we havn't used any Git command till now and believe me we won't use it next as well.</big>
+                    </blockquote>
+                    <p>&emsp;&emsp;<span><big>8 .</big></span>&emsp;Now lets push code to your GitHub repository
+                        <br>
+                        <blockquote>
+                            <p>Note, that you see "TestGitRepo1" under "Remotes" on left tab - That indicates that this SourceTree repo is configurd to "TestGitRepo1" repository.</p>
+                            <img src="assets-git-management/images/Sourcestep8.png" class="img-responsive" alt="">
+                        </blockquote>
+                        <br>Now Move your files to Staging Enviornment by clicking "Unstaged files" check button
+                        <br>
+                        <img src="assets-git-management/images/Sourcestep8-1.png" class="img-responsive" alt="">
+                        <br>Now enter your commit message in "Commit message" text box at the bottom.
+                        <img src="assets-git-management/images/Sourcestep8-2.png" class="img-responsive" alt="">
+                        <br>Now click the "Commit" button next to it and you see this screen when you click on "master" on side bar.
+                        <img src="assets-git-management/images/Sourcestep8-3.png" class="img-responsive" alt="">
+                        <blockquote>
+                            <p>Lets understand what is going on here
+                                <ol>
+                                    <li>We created our Project</li>
+                                    <li>We added all files to Staging</li>
+                                    <li>We committed all added files to Staging</li>
+                                </ol>
+                            </p>
+                        </blockquote>
+                        <br>Now we want out GitHub repository to get this code into master Branch. For that click on "master" <i class="fa fa-angle-right"></i> "Push to" <i class="fa fa-angle-right"></i> "TestGitRepo1", as shown below.
+                        <img src="assets-git-management/images/Sourcestep8-4.png" class="img-responsive" alt="">
+                        <br>Now a dialog box will open, let every thing be on default.
+                        <img src="assets-git-management/images/Sourcestep8-5.png" class="img-responsive" alt="">
+                        <br>Now click "Ok" and open your Github repository in Browser. It should show your code as in image below.
+                        <br>
+                        <blockquote>
+                            <p>Note : You may or may not be asked to enter your password of GitHub.</p>
+                        </blockquote>
+                        <img src="assets-git-management/images/Sourcestep8-6.png" class="img-responsive" alt="">
+                        <br>
+                        <blockquote class="text-center">
+                            <p><big><b><u>What Happened</u></b></big>
+                            </p>
+                            <p>You have created your project, commited to Git and then Pushed the code to GitHub into your <u>"master"</u> branch.</p>
+                        </blockquote>
+                    </p>
+                    <h3 class="sub-title text-center" id="teamtrick">Team Trick<i class="fa fa-github"></i></h3>
+                    <p class="text-centre"><big>We have seen that we pushed code to Github into master branch and </big></p>
 
 
                     <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p>
