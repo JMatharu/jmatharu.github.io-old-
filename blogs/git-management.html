@@ -418,7 +418,7 @@
                     <blockquote class="text-center">
                         <big>Noticable thing is that we havn't used any Git command till now and believe me we won't use it next as well.</big>
                     </blockquote>
-                    <p>&emsp;&emsp;<span><big>8 .</big></span>&emsp;Now lets push code to your GitHub repository
+                    <p id="Step8SourceTree">&emsp;&emsp;<span><big>8 .</big></span>&emsp;Now lets push code to your GitHub repository
                         <br>
                         <blockquote>
                             <p>Note, that you see "TestGitRepo1" under "Remotes" on left tab - That indicates that this SourceTree repo is configurd to "TestGitRepo1" repository.</p>
@@ -535,15 +535,83 @@
                         <blockquote>Note : Developers usually are assigned with some tasks and and according to that they make changes that they have completed some tasks that are assigned to them.</blockquote>
                     </p>
                     <p>
-                        <BLOCKQUOTE>NOTE : Step 1 to 5 is specifically for Developers.</BLOCKQUOTE>
+                        <BLOCKQUOTE>NOTE : Step 1 to 8 is specifically for Developers.</BLOCKQUOTE>
                     </p>
-                    <p>&emsp;&emsp;<span><big>1 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;</p>
-                    <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;</p>
+                    <p id="Step1PushPull">&emsp;&emsp;<span><big>1 .</big></span>&emsp;Lets say as a developer you completed your task and have done <a href="http://searchsoftwarequality.techtarget.com/definition/unit-testing" target="_blank">Unit Testing</a> on your code and now you want your Github repository to have this updated code.
+                        <br>Here is how your SourceTree looks when you update project
+                        <img src="assets-git-management/images/pushandPull1.png" class="img-responsive" alt="">
+                        <br>Lets explain what you see here
+                        <br>
+                        <ol>
+                            <li>You can see some uncommited files under Unstaged Section in lower section image, these are the files that are modified</li>
+                            <li>On lower right side you see your updated code that you updated(in this case its just dummy <i class="fa fa-smile-o"></i>)</li>
+                            <li>Under Description box you see its written "Uncommitted changes", that means you have some uncommited files on your local branch</li>
+                        </ol>
+                    </p>
+                    <p>&emsp;&emsp;<span><big>2 .</big></span>&emsp;Now add files to staging and then commit with a commit message as in image below, make sure "Push changes immediately to origin/Master" is unchecked and you don't push at this point.
+                        <img src="assets-git-management/images/pushandPull2.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>3 .</big></span>&emsp;After you commit you see the Description box shows you are 1 commit ahead of master, and also shows your commit message.
+                        <img src="assets-git-management/images/pushandPull3.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>4 .</big></span>&emsp;It's time to push code.
+                        <br>You go to Branches(loacal) <i class="fa fa-angle-right"></i> master <i class="fa fa-angle-right"></i>Push to <i class="fa fa-angle-right"></i> origin
+                        <img src="assets-git-management/images/pushandPull4.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>5 .</big></span>&emsp;A dialog box will open. Under Remote branch you will see all remote branches.
+                        <br> Select the one that belongs to you.
+                        <br>And press "Ok"
+                        <img src="assets-git-management/images/pushandPull5.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>6 .</big></span>&emsp;Now go to GitHub to your repository, you will see something like below.
+                        <img src="assets-git-management/images/pushandPull6.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>7 .</big></span>&emsp;Click on "Compare and Pull request"
+                        <br>You will see something like below
+                        <img src="assets-git-management/images/pushandPull7.png" class="img-responsive" alt="">
+                    </p>
+                    <p id="Step8PushPull">&emsp;&emsp;<span><big>8 .</big></span>&emsp;Now click on "Create pull request" (You can add Write comments to this pull request before you want to create one)
+                        <br>Now you will see something like this
+                        <br>This Pull request can be assigned to ScrumMaster/Customer by clicking on Assignee and then assign him/her this task.
+                        <br><big>In any case only ScrumMaster should do next steps on Pull request</big>
+                        <img src="assets-git-management/images/pushandPull8.png" class="img-responsive" alt="">
+                    </p>
+                    <p class="text-center">
+                        <blockquote class="text-center">
+                            <p><b><big>Up to this step Developer has pushed code and then send a Pull Request to ScrumMaster</big></b>
+                            </p>
+                            <p><b><big>Now From Step 9 to <a href="">asdahsgdjhags</a> ScrumMaster/Customer is back on work.</big></b>
+                            </p>
+                        </blockquote>
+                    </p>
+                    <p>&emsp;&emsp;<span><big>9 .</big></span>&emsp;Now ScrumMaster will see 1 Pull request on right side bar as in image below
+                        <img src="assets-git-management/images/pushandPull9.png" class="img-responsive" alt="">
+                        <br>ScrumMaster clicks on that pull request, and opens that pull request as in image below
+                        <br>
+                        <blockquote>
+                            <p>Note : If there is any conflict then GitHub will block "Merge pull request" button, so to avoid this make sure you understand what the flow is</p>
+                        </blockquote>
+                        <img src="assets-git-management/images/pushandPull10.png" class="img-responsive" alt="">
+                        <br>Now if ScrumMaster wants to check code (if its according to task given) then ScrumMaster can click on "File Changed" and view code. Otherwise ScrumMaster clicks on "Merge pull request" and then can "Confirm merge"
+                        <img src="assets-git-management/images/pushandPull11.png" class="img-responsive" alt="">
+                        <br>Now When ScrumMaster see repository home page it should show you the added code (you can check from comment"First Developer Push") like in image below.
+                        <img src="assets-git-management/images/pushandPull12.png" class="img-responsive" alt="">
+                    </p>
+                    <blockquote>
+                        <p>What happened till now
+                            <ol>
+                                <li>Developer 1 Pushed code to its Remote Branch</li>
+                                <li>Gave Pull request to ScrumMaster/Customer</li>
+                                <li>ScrumMaster then Compare the Code and Merge Request</li>
+                            </ol>
+                            <big><b>So we can say now Master Branch has code of First commit and Commit made by Developer 1, in short <u>master branch has latest and greatest code</u></b></big>
+                        </p>
+                    </blockquote>
+                    <p>&emsp;&emsp;<span><big>10 .</big></span>&emsp;Now Developer 2 will pull code from this latest Remote master into its local repository and will get the latest code which includes the code from Developer 1 as well.
+                        <br>You will get a dialog box asking you to confirm pull, hit "Ok"
+                        <img src="assets-git-management/images/pushandPull13.png" class="img-responsive" alt="">
+                    </p>
+                    <p>&emsp;&emsp;<span><big>11 .</big></span>&emsp;Now Developer 2 will complete his/her task and Now Developer 2 will repeate same steps as did by Developer 1 from <a href="#Step1PushPull" class="scrollto">Step 1</a> to <a href="#Step8PushPull" class="scrollto">Step 8</a> above.</p>
                 </div>
             </div>
         </div>
